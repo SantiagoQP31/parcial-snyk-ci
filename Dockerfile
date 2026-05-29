@@ -5,7 +5,7 @@ FROM node:20-alpine
 WORKDIR /usr/src/app
 
 # Actualizar el gestor de paquetes global (npm) para parchar vulnerabilidades internas (glob, tar, minimatch)
-RUN npm install -g npm@latest
+RUN npm install -g npm@latest pacote@latest
 
 # Copiar package.json y package-lock.json al directorio de trabajo
 COPY package*.json ./
